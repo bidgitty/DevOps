@@ -12,7 +12,7 @@ job('maven_dsl') {
             goals('-B -DskipTests clean package')
         }
         maven {
-            mavenInstallation('maven')
+            mavenInstallation('M2_HOME')
             goals('test')
         }
         shell('''
